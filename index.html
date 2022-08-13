@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/53eadd344d.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color:#352f5b">
+    <div class="container">
+
+        <!--  HEADER  -->
+        <header class="text-center text-light my-4">
+            <!-- Alert Items Start -->
+            <div class="alert d-flex align-items-center d-none" role="alert" id="alert-box">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+                    <use xlink:href="#check-circle-fill" />
+                </svg>
+                <div class="alert-text">
+                    Item Added Succesfully !
+                </div>
+            </div>
+
+            <!-- Alert Items End -->
+            <h1 class="mb-4">Todo List</h1>
+            <form class="search">
+                <input type="text" class="form-control m-auto" name="search" placeholder="search todos"
+                    id="search-items">
+            </form>
+        </header>
+
+        <!--  LIST  -->
+        <ul class="list-group todos mx-auto text-light">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>eat pizza</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>listen to music</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+        </ul>
+
+        <!--  FORM  -->
+        <form class="add text-center my-4">
+            <label for="add" class="add text-light">Add a new todo:</label>
+            <input type="text" class="form-control m-auto" name="add" id="add">
+            <input type="submit" class="mt-4 btn btn-success w-100" id="add-items">
+        </form>
+
+    </div>
+
+
+
+
+
+
+    <script src="app.js">
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
